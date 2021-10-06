@@ -1,21 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Agora e começar os trabalhos!!!!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import Redux from "./src/redux/root";
+import Navigation from "./src/navigation";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => (
+  <Redux>
+    <Navigation />
+  </Redux>
+);
+
+export default App;

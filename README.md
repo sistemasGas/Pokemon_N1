@@ -14,4 +14,5 @@ Ira abrir no navegador, no meu caso eu prefiro e no terminal e escolher a opçã
 Equipe de Dev:
 ---
 - Edivan Carvalho
+- Anthonny Max
 - ...
