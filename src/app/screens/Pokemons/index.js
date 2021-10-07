@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getPokemons, resetPokemons } from "../../../redux/pokemons/action";
 
 import PokemonsListHeader from "../../components/pokemons/header";
+import UselessTextInput from "../../components/pokemons/search/search";
 import PokemonItem from "../../components/pokemons/item";
 
 import Loading from "../../components/util/loading";
@@ -46,6 +47,7 @@ const PokemonsList = ({ navigation }) => {
         <PokemonItem item={item} navigation={navigation} />
       )}
       ListHeaderComponent={<PokemonsListHeader />}
+      ListSearchComponent={<UselessTextInput />}
       ListFooterComponent={<Loading loading={pokemons.loading} />}
       onEndReached={loadMore}
       onEndReachedThreshold={2}
