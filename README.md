@@ -16,3 +16,4 @@ Equipe de Dev:
 - Edivan Carvalho
 - Anthonny Max
 - Jonatha S. Freitas
+- Deockar Alexandre
